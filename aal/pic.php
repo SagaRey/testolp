@@ -6,7 +6,7 @@
 				$url = "http://www.xx9.com/html/article/".$_GET['url'];
 				$contents = preg_replace('/<img[\s\S]*alt[\s\S]*>/U','',file_get_contents($url));
 				$contents = iconv("gb2312","utf-8//IGNORE",$contents);
-				preg_match('/<title[\s\S]*alt[\s\S]*\/title>/U',$contents,$titles);
+				preg_match('/<title[\s\S]*\/title>/U',$contents,$titles);
 				echo $titles[0];
 			?>
 		<style type="text/css">
