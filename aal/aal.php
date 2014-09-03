@@ -4,7 +4,10 @@
 	    <link rel="stylesheet" href="../css/bootstrap.css">
 	</head>
 	<body>
-		<ul class="list-group">
+		<div class="container-fluid">
+  			<div class="row">
+	  			<div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
+					<ul class="list-group">
 <?php
 	if($_POST['password']!="aoaolu"){
 		header("Location:./"); 
@@ -22,12 +25,16 @@
 	}
 	// echo $contents;
 ?>
-		</ul>
+					</ul>
+				</div>
+			</div>
+		</div>
 	    <script src="../js/jquery.min.js"></script>
 	    <script src="../js/bootstrap.min.js"></script>
 	    <script type="text/javascript">
 	    	$(document).ready(function(){
 			   $("li").addClass("list-group-item");
+			   $("span").addClass("label").addClass("label-default");
 			});
 	    </script>
 	</body>
