@@ -8,7 +8,7 @@
 	$contents = file_get_contents($page);
 	$contents = iconv("gb2312","utf-8//IGNORE",$contents);
 	// preg_match_all('/<ul[\s\S]*<\/ul>/U',$contents,$uls,PREG_PATTERN_ORDER);
-	preg_match_all('/<li[\s\S]*<\/li>/U',$contents,$uls,PREG_PATTERN_ORDER);
+	preg_match_all('/<li>[\s\S]*<\/li>/U',$contents,$uls,PREG_PATTERN_ORDER);
 	for($i=0;$i < count($uls[0]);$i++){
 		// echo $uls[0][$i];
 		echo preg_replace('/html\/article\//','aal/pic.php?url=',preg_replace('/<img[\s\S]*>/U','',$uls[0][$i]));
