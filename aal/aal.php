@@ -1,4 +1,11 @@
-﻿<?php
+﻿<html>
+	<head>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	    <link rel="stylesheet" href="../css/bootstrap.css">
+	</head>
+	<body>
+		<ul class="list-group">
+<?php
 	if($_POST['password']!="aoaolu"){
 		header("Location:./"); 
 		exit;
@@ -15,3 +22,13 @@
 	}
 	// echo $contents;
 ?>
+		</ul>
+	    <script src="../js/jquery.min.js"></script>
+	    <script src="../js/bootstrap.min.js"></script>
+	    <script type="text/javascript">
+	    	$(document).ready(function(){
+			   $("li").addClass("list-group-item");
+			});
+	    </script>
+	</body>
+</html>
