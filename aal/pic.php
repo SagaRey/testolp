@@ -12,8 +12,8 @@
 		<style type="text/css">
 
 		img{
-			width: 98%;
-			margin: 1%;
+			width: 100%;
+			margin-top: 2px;
 		}
 		</style>
 	</head>
