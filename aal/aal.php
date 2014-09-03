@@ -3,7 +3,7 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	    <link rel="stylesheet" href="../css/bootstrap.css">
 	</head>
-	<body style="margin-top: 2px;margin-left: 6px;margin-right: 6px">
+	<body style="margin-top: 2px;margin-left: 2px;margin-right: 2px">
 		<div class="container-fluid">
   			<div class="row">
 	  			<div class="col-xs-12 col-xs-offset-0 col-md-6 col-md-offset-3">
